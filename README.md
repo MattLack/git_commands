@@ -1,5 +1,10 @@
 # List of git commands to consult
 
+```
+mkdir {project}
+cd {project}
+git init
+```
 
 ## Ordem geral para comitar mudanças no seu código
 ```							
@@ -8,7 +13,7 @@
 2 - git commit -m "texto para titulo do commit"
 3 - git push
 ```
-================================================================================================================
+==========================================================================
 
 ## Upar projeto
 ```
@@ -19,7 +24,7 @@ git remote add origin <remote repository URL>
 git remote -v
 git push -f origin master
 ```
-================================================================================================================
+==========================================================================
 
 ## Commits 
 
@@ -81,80 +86,75 @@ Git remote -v
 ```
 Git branch <local-branch> -u <remote>/<remote-branch>
 ```
+==========================================================================
 
------------------------------------------------------------------------------------------------------------------------------------
 
-para fazer push de um branch para outro
+#### para fazer push de um branch para outro
 ```
 git push origin seu_branch_atual:o_outro_branch
 ```
-_______________________________________________________________________________________________________________________________________
-
---visualizar os arquivos que estão com conflito
+#### visualizar os arquivos que estão com conflito
 ```
 git diff --name-only --diff-filter=U
 ```
--- resolver problema para criação do primeiro branch 
+#### resolver problema para criação do primeiro branch 
 ```
 git checkout -t -b master origin/master
 ```
-________________________________________________________________________________________________________________________________________
+
+==========================================================================
+
+#### inicializa um repositório git local vazio
 ```
 git init 
 ```
-inicializa um repositório git local vazio
-```
-mkdir {project}
-cd {project}
-git init
-```
+#### verifica o status do seu branch local
 ```
 git status
 ```
-verifica o status do seu branch local
+#### Adiciona arquivo a fila de itens modificados no branch
 ```
 git add {file}
 ```
-Adiciona arquivo a fila de itens modificados no branch
+#### Adiciona a mensagem/texto ao arquivo
 ```
 echo {mensagem} > {file}
 ```
-Adiciona a mensagem/texto ao arquivo
+#### Cria arquivo na extensão dentro do branch
 ```
 touch {file.extension}
 ```
-Cria arquivo na extensão dentro do branch
+#### Adiciona todos os arquivos modificados e criados no branch a lista de itens do branch 
 ```
 git add .
 ```
-Adiciona todos os arquivos modificados e criados no branch a lista de itens do branch 
+#### Captura um Snapshot dos arquivos adicionados a lista de itens (tira como uma foto desse momento do branch)
 ```
 git commit -m "{mensagem}"
 ```
-Captura um Snapshot dos arquivos adicionados a lista de itens (tira como uma foto desse momento do branch)
+#### Verifica a versão do git que está instalada em seu computador
 ```
 git --version
 ```
-Verifica a versão do git que está instalada em seu computador
+#### Verifica o histórico dos commits do branch em um único hash code
 ```
 git log
 ```
-Verifica o histórico dos commits do branch em um único hash code
+#### Mostra informações sobre o commit relacionado ao point
 ```
 git show {point}
 ```
-Mostra informações sobre o commit relacionado ao point
+#### Atualiza o workstation do seu diretório local para o commit com o hash code repassado 
 ```
 git checkout {hash code}
 ```
-Atualiza o workstation do seu diretório local para o commit com o hash code repassado 
+#### Atualiza o workstation do seu diretório local para o último commit do branch
 ```
 git checkout {branch}
 ```
-Atualiza o workstation do seu diretório local para o último commit do branch
+#### Auxilia no gerenciamento de versão dos commits criando uma tag para utilizar no lugar do hash code
 ```
 git tag {version}
 ```
-Auxilia no gerenciamento de versão dos commits criando uma tag para utilizar no lugar do hash code
 
 
