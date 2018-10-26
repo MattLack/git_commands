@@ -1,20 +1,20 @@
 # List of git commands to consult
 
 
-###--------------------------------------Commits------------------------------------------------------------------------------------
---Reseta a branch para o estado do último commit
+### Commits 
+>Reseta a branch para o estado do último commit
 Git reset --hard
 
--- Adiciona os arquivos para staged
+>Adiciona os arquivos para staged
 Git add *
 
---Comita os arquivos staged
+>Comita os arquivos staged
 Git commit -m "<mensagem_de_comit>"
 
---Push para upstream
+>Push para upstream
 Git push
 
---Pull do Upstream (se estiver em outro branch ele da pull neste branch)
+>Pull do Upstream (se estiver em outro branch ele da pull neste branch)
 Git pull
  
 --Merge do local com upstream passado como parêmetro
