@@ -2,16 +2,20 @@
 
 
 ### Commits 
->Reseta a branch para o estado do último commit
+#### Reseta a branch para o estado do último commit
+´´´´
 Git reset --hard
-
+´´´´
 >Adiciona os arquivos para staged
+
 Git add *
 
 >Comita os arquivos staged
+
 Git commit -m "<mensagem_de_comit>"
 
 >Push para upstream
+
 Git push
 
 >Pull do Upstream (se estiver em outro branch ele da pull neste branch)
