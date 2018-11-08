@@ -156,5 +156,8 @@ git checkout {branch}
 ```
 git tag {version}
 ```
-
-
+#### Deletar Branchs
+```
+git push --delete <remote_name> <branch_name>
+git branch -d <branch_name>
+```
