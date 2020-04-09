@@ -30,23 +30,23 @@ git push -f origin master
 
 #### Reseta a branch para o estado do último commit
 ```
-Git reset --hard
+git reset --hard
 ```
 #### Adiciona os arquivos para staged
 ```
-Git add *
+git add *
 ```
 #### Comita os arquivos staged
 ```
-Git commit -m "<mensagem_de_comit>"
+git commit -m "<mensagem_de_comit>"
 ```
 #### Push para upstream
 ```
-Git push
+git push
 ```
 #### Pull do Upstream (se estiver em outro branch ele da pull neste branch)
 ```
-Git pull
+git pull
 ``` 
 #### Merge do local com upstream passado como parêmetro
 ```
@@ -56,35 +56,39 @@ git merge origin/<upstream_branch_Name>
 ```
 git clone -b nome_do_branch http://....linkdorepositório
 ```
+#### Checar configurações locais do git
+```
+git config --list
+```
 ## Branches
 
 ####  verifica o status do repositório local e informa qual o branch atual e qual o branch do upstram do remoto
 ```
-Git status
+git status
 ```
 #### lista todos os branch mapeados localmente
 ```
-Git branch -a
+git branch -a
 ```
 #### atualiza lista de branch existentes no remoto
 ```
-Git fetch -p
+git fetch -p
 ```
 #### muda para um branch local ou cria um novo caso não exista
 ```
-Git checkout <nome_branch>
+git checkout <nome_branch>
 ```
 #### renomeia um branch
 ```
-Git branch -m <nome-antigo> <novo-nome>
+git branch -m <nome-antigo> <novo-nome>
 ```
 #### mostra o nome do remoto
 ```
-Git remote -v
+git remote -v
 ```
 #### identifica qual o branch no remoto receberá os commits do repositório
 ```
-Git branch <local-branch> -u <remote>/<remote-branch>
+git branch <local-branch> -u <remote>/<remote-branch>
 ```
 ==========================================================================
 
