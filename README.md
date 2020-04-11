@@ -21,8 +21,7 @@ git init
 git add .
 git commit -m "First commit"
 git remote add origin <remote repository URL>
-git remote -v
-git push -f origin master
+git push -u origin master
 ```
 ==========================================================================
 
@@ -59,6 +58,10 @@ git clone -b nome_do_branch http://....linkdorepositório
 #### Checar configurações locais do git
 ```
 git config --list
+```
+#### Alterar o link do remote atual
+```
+git remote set-url origin https://....linkdorepositorio
 ```
 ## Branches
 
