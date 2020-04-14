@@ -97,6 +97,18 @@ git remote -v
 ```
 git branch <local-branch> -u <remote>/<remote-branch>
 ```
+#### deleta uma branch local
+```
+git branch -d <branch_name>
+```
+#### força a deletar uma branch local
+```
+git branch -D <branch_name>
+```
+#### deleta uma branch no github
+```
+git push origin :<name_of_your_new_branch>
+```
 ==========================================================================
 
 
