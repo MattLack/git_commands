@@ -77,9 +77,13 @@ git branch -a
 ```
 git fetch -p
 ```
-#### muda para um branch local ou cria um novo caso não exista
+#### muda para um branch local
 ```
 git checkout <nome_branch>
+```
+#### cria um novo branch local
+```
+git checkout -b <nome_branch>
 ```
 #### renomeia um branch
 ```
